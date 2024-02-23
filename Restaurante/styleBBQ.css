@@ -1,0 +1,657 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.contenedor {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 1rem 0;
+}
+
+.logo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+nav{
+    text-decoration: none;
+    color: #000000;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav li{
+    display:inline-block;
+    text-align:center;
+    padding: 0 1rem;
+    }
+
+.menu {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.reserva a {
+  background-color: rgb(229, 134, 16);
+  color: #ffffff;
+  padding: 0.9rem 2.2rem;
+  border-radius: 50px;
+}
+
+.reserva a:hover {
+  color: #ffffff;
+  background-color: rgb(255, 134, 16);
+}
+
+ li a:hover{
+  color: orange;
+}
+/*ICONO MENÚ MÓVIL*/
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+/*ACTIVA EL MENÚ CON UNA CASILLA DE CHECK*/
+#check{
+    display: none;
+}
+
+.horizonral li {
+	color: #000000;
+}
+
+@media (max-width: 900px){
+  .logo {
+    width: 30%;
+    height: 100%;
+    margin: 0 4rem;
+  }
+
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition:  .8s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+		}
+
+.botones {
+	display: flex;
+	justify-content: center;
+}
+
+.pollo {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(https://websitedemos.net/bbq-restaurant-08/wp-content/uploads/sites/694/2020/09/bbq-banner-01.jpg);
+	min-height:860px; 
+	width: 100%; 
+	margin-left: calc(-50vw + 50%); 
+	margin-right: calc(-50vw + 50%); 
+	max-width: 100vw; 
+	width: 100vw; 
+	display: flex; 
+	justify-content: center;
+}
+
+.fondo-pollo {
+	display: block;
+	justify-content: space-around;
+}
+
+/*imagen dentro del primer fondo*/
+.img-1 {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	padding-top: 2em;
+}
+/*primer h3*/
+.h3-1 {
+	font-size: 28px;
+	text-align: center;
+	color: #db9423;
+	font-family: 'Poppins',sans-serif;
+	padding: 2rem 0;
+	}
+/*el h1*/
+h1 {
+	text-align: center; 
+	color: #FFFFFF;
+	font-size: 100px;
+	font-family: 'Abril Fatface';
+}
+
+.parrafo-1 {
+	color: #FFFFFF;
+	text-align: center;
+	font-family: 'Poppins',sans-serif;
+	margin-bottom: 3em;
+	padding: 2rem 0;
+}
+/*boton del primer fondo*/
+.boton-2 {
+	border: 1px solid #db9423;
+	padding: 20px;
+	background-color: #db9423;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: inherit;
+	border-radius: 50px;
+	font-size: 12px;
+	width: 80px;
+	text-align: center;
+}
+
+.boton-2:hover {
+	background-color: #ed7a00;
+	border: 1px solid #ed7a00;
+}
+
+.boton-3 {
+	border: none;
+	padding: 20px;
+	background-color: transparent;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: inherit;
+	border-radius: 50px;
+	font-size: 12px;
+	width: 100px;
+	text-align: center;
+}
+
+/*Start the bbq place*/
+@media (min-width: 1110px) {
+#columnas {
+	display: flex;
+	column-gap: normal;
+	column-count: 2;
+	margin-top: 4em;
+}
+
+#columna1 {
+	width: 35%;
+}
+
+#columna2 {
+	width: 65%;
+}
+
+#columna2 img {
+	margin: 0 1em;
+	width: 20em;
+	height: 40em;
+}	
+}
+/*Start logos*/
+@media (min-width: 990px) and (max-width: 1110px) {
+#columnas {
+	display: flex;
+	column-gap: normal;
+	column-count: 2;
+	margin-top: 4em;
+}
+/*End logos*/
+#columna1 {
+	width: 40%;
+}
+
+#columna2 {
+	width: 60%;
+}
+
+#columna2 img {
+	margin: 0 1em;
+	width: 16em;
+	height: 35em;
+}
+
+}
+
+@media (min-width: 822px) and (max-width: 990px) {
+#columnas {
+	display: flex;
+	column-gap: normal;
+	column-count: 2;
+	margin-top: 4em;
+}
+
+#columna1 {
+	width: 40%;
+}
+
+#columna2 {
+	width: 60%;
+}
+
+#columna2 img {
+	margin: 0 1em;
+	width: 14em;
+	height: 34em;
+}
+
+}
+
+@media (min-width: 780px) and (max-width: 822px) {
+#columnas {
+	display: flex;
+	column-gap: normal;
+	column-count: 2;
+	margin-top: 4em;
+}
+
+#columna1 {
+	width: 40%;
+}
+
+#columna2 {
+	width: 60%;
+}
+
+#columna2 img {
+	margin: 0 1em;
+	width: 12em;
+	height: 35em;
+}
+
+}
+
+@media (max-width: 780px) {
+	#columnas {
+		display: block;
+		
+	}
+	#columna2 {
+		text-align: center;
+		margin-top: 1em;
+	}
+}
+/*End the bbq place*/
+
+.h3-logo {
+	font-size: 30px;
+	font-family: 'Abril Fatface';
+}
+
+@media (min-width: 900px) {
+	#columnas-logos {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 2rem 2rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.img-logo {
+	width: 35%;
+	height: auto;
+	}
+}
+
+.lista-logos {
+	list-style: none;
+	display: flex;
+}
+
+#seccion-platos {
+	display: block;
+	width: 100%;
+	margin: 2rem 0 0 2rem;
+}
+
+.fila-platos {
+	display: flex;
+	justify-content: center;
+}
+
+@media (max-width: 650px) {
+	.fila-platos {
+		display: block;
+		justify-content: center;
+	}
+	
+	.plato1 {
+		display: none;
+	}
+}
+
+.fila-platos img {
+	margin: 0.5rem 2rem;
+	width: 50%;
+	height: 80%;
+}
+
+.plato1 {
+	display: flex;
+}
+
+.img-2 {
+	display: block;
+	margin: auto;
+	margin-top: 3em;
+}
+
+.h2-1 {
+	font-family: 'Abril Fatface',display;
+	text-align: center;
+	font-size: 40px;
+}
+
+.img-3 {
+	display: block;
+	margin: auto;
+	padding: 2rem 0;
+}
+
+.h6-1 {
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: 'Poppins',sans-serif;
+}
+
+.parrafo-2 {
+	text-align: center;
+	font-family: 'Poppins',sans-serif;
+	padding: 1rem 0;
+}
+
+.boton-4 {
+	display: block;
+	margin: auto;
+	border: 1px solid #db9423;
+	padding: 20px;
+	background-color: #db9423;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: inherit;
+	border-radius: 50px;
+	font-size: 12px;
+	width: 80px;
+}
+
+.boton-4:hover {
+	background-color: #ed7a00;
+	border: 1px solid #ed7a00;
+}
+
+.tomate {
+	background-image:url(https://websitedemos.net/bbq-restaurant-08/wp-content/uploads/sites/694/2019/12/Grill-food-banner.jpg);
+	min-height:490px; width: 100%; 
+	margin-left: calc(-50vw + 50%); 
+	margin-right: calc(-50vw + 50%); 
+	max-width: 100vw; width: 100vw;
+}
+
+.h2-2 {
+	text-align: center;
+	font-family: 'Abril Fatface',display;
+	font-size: 40px;
+	color: #db9423;
+	padding: 3em 0em 0em 0em;
+}
+
+.h6-2 {
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Poppins',sans-serif;
+}
+
+.parrafo-3 {
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family: 'Poppins',sans-serif;
+}
+
+.h3-food {
+	font-size: 28px; 
+	font-family: 'Abril Fatface',display;
+}
+
+.h4-food {
+	font-size: 1.6666666666667rem; 
+	font-family: 'Poppins',sans-serif;
+}
+
+.p-food {
+	font-family: 'Poppins',sans-serif;
+	margin: 1rem 0;
+}
+
+.brindis {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(https://websitedemos.net/bbq-restaurant-08/wp-content/uploads/sites/694/2020/01/party-group-of-people.jpg);
+	min-height:900px; 
+	width: 100%; 
+	margin-top: 4em;
+	margin-left: calc(-50vw + 50%); 
+	margin-right: calc(-50vw + 50%);
+	max-width: 100vw; 
+	width: 100vw; 
+	text-align: center;
+}
+
+.h4-brindis {
+	font-size: 1.6666666666667rem; 
+	font-family: 'Poppins',sans-serif; 
+	color: #FFFFFF;
+	padding: 2rem 0;
+}
+
+.h2-brindis {
+	color: #db9423; 
+	font-size: 40px; 
+	font-family: 'Abril Fatface',display;
+}
+
+.p-brindis {
+	font-family: 'Poppins',sans-serif; 
+	color: #FFFFFF;
+	padding: 2rem 0;
+}
+
+.img-4 {
+	display: block;
+	margin: auto;
+	padding-top: 5em;
+}
+
+.boton-5 {
+	display: block;
+	margin: auto;
+	border: 1px solid #db9423;
+	padding: 20px;
+	background-color: #db9423;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: inherit;
+	border-radius: 50px;
+	font-size: 12px;
+	width: 140px;
+
+}
+
+.boton-5:hover {
+	background-color: #ed7a00;
+	border: 1px solid #ed7a00;
+}
+
+.h2-person {
+	font-size: 40px; 
+	font-family: 'Abril Fatface',display; 
+	text-align: center; 
+	margin-top: 2em;
+}
+
+.random-text {
+	text-align: center; 
+	font-family: 'Poppins',sans-serif;
+	padding: 0 0 2rem 0;
+}
+
+
+#columnas-personas {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+}
+
+@media (max-width: 781px) {
+	#columnas-personas {
+		flex-wrap: wrap;
+	}
+	
+	.personas h5 {
+		font-size: 1.1rem;
+	}
+	
+	.personas h6 {
+		font-size: 1.1rem;
+	}
+}
+
+@media (max-width: 590px) {
+	#columnas-personas {
+		display: block;
+	}
+}
+
+.personas {
+	padding: 0 1rem;
+}
+
+.h5-person {
+	font-size: 1.4rem; 
+	font-family: 'Poppins',sans-serif;
+}
+
+.h6-person {
+	font-size: 1.1333333333333rem; 
+	font-family: 'Poppins',sans-serif;
+}
+
+.img-person {
+	margin: 1rem 0;
+}
+
+.fondo-mesa {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(https://websitedemos.net/bbq-restaurant-08/wp-content/uploads/sites/694/2019/12/hotel-diner-dining.jpg);
+	min-height:900px; 
+	width: 100%; 
+	margin-top: 4em;
+		margin-left: calc(-50vw + 50%); 
+	margin-right: calc(-50vw + 50%); 
+	max-width: 100vw; 
+	width: 100vw; 
+	text-align: center;
+}
+
+.h2-fondo-mesa {
+	color: #FFFFFF; 
+	font-size: 3rem; 
+	font-family: 'Abril Fatface',display; 
+	padding-top: 3em;
+}
+
+.p-fondo-mesa {
+	font-family: 'Poppins',sans-serif; 
+	color: #FFFFFF; 
+	padding-top: 20px;
+}
+
+.h2-2-fondo-mesa {
+	color: #FFFFFF; 
+	font-size: 1.4rem; 
+	font-family: 'Abril Fatface',display;
+	padding: 2rem 0;
+}
+
+#column-redes {
+	column-count: 5;
+	column-gap: 1em;
+	margin-top: 3em;
+	margin-left: 0em;
+	text-align: center;
+}
+
+#column-credits {
+	column-count: 2;
+	column-gap: 10em;
+	text-align: center;
+	background-color: #000000; 
+	color: #FFFFFF; 
+	padding: 2.5em 0em; 
+	width: 100%; 
+	height: 100%; 
+	font-family: 'Poppins',sans-serif;
+}
+
+svg {
+	background-color: #db9423;
+	border-radius: 50%;
+	padding: 0.5rem;
+	margin: 0 0.6rem;
+}
+
+svg:hover {
+	background-color: #ed7a00;
+}
+
+.div-credits1 {
+	text-align: left; 
+	padding-left: 2em;
+}
+
+.div-credits2 {
+	text-align: right; 
+	padding-right: 2em
+}
